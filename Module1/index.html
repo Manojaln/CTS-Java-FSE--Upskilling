@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <script src="main.js"></script>
+  <!-- // navigation bar  -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#promo">Promo</a></li>
+      <li><a href = "#footer">Contact</a></li>
+      <li><a href="help.html" target="_blank">Help</a></li>
+    </ul>
+  </nav>
+  <!-- // main page -->
+   <section id="home">
+    <h1><span style="color: rgb(246, 193, 1);">Welcome</span> to the <span style="color: rgb(255, 106, 0);">Local Community Event Portal</span></h1>
+    <p>Discover and register for local community events</p>
+   </section id = "events">
+   <!-- // event page  -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <div class="events">
+        <div class="event" data-event="music">
+          <img src="music-event.jpg" alt="Music Event" class="event_image">
+          <h3>Music Event</h3>
+          <p>Join us for a night of music and fun!</p>
+      
+        <div class="event_details">
+          <div class="detail">
+            <span>Date: June 20 , 2025</span>
+          </div>
+          <div class="detail">
+            <span>Time: 8:00 PM</span>
+          </div>
+          <div class="detail">
+            <span>Location: The Music Hall</span>
+          </div>
+        </div>
+          
+          <button class="register_btn">Register Now</button>
+        </div>
+        <div class="event" data-event="art">
+          <img src="art-event.jpg" alt="Art Event" class="event_image">
+          <h3>Art Event</h3>
+          <p>Join us for a night of art and creativity!</p>
+        
+        <div class="event_details">
+          <div class="detail">
+            <span>Date: september 25 , 2025</span>
+          </div>
+          <div class="detail">
+            <span>Time: 9:00 PM</span>
+          </div>
+          <div class="detail">
+            <span>Location: The Art Gallery</span>
+          </div>
+          </div>
+          <button class="register_btn">Register Now</button>
+        </div>
+        <div class="event" data-event="tech">
+          <img src="tech-event.jpg" alt="Tech Event" class="event_image">
+          <h3>Tech Event</h3>
+          <p>Join us for a night of tech and innovation!</p>
+
+        <div class="event_details">
+          <div class="detail">
+            <span>Date: December 27 , 2025</span>
+          </div>
+          <div class="detail">
+            <span>Time: 10:00 PM</span>
+          </div>
+          <div class="detail">
+            <span>Location: The Tech Hub</span>
+          </div>
+          </div>
+          <button class="register_btn">Register Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- // Registeration form appears only when the user clicks on the register button on the event page -->
+    <section id="register" style="display:none;">
+      <h2>Register for an Event</h2>
+      <form id ="registrationForm">
+        <input type="text" id="name" placeholder="Enter your Name" required>
+        <input type="tel" id="phone" placeholder="Enter your Phone Number" required>
+        <select id="eventType" required placeholder="Select an event type"> 
+          <option value="music">Music</option>
+          <option value="art">Art</option>
+          <option value="tech">Tech</option>
+        </select>
+        <p id="eventFee">Event Fee: </p>
+        <textarea id="feedback" placeholder="Give your feedback"></textarea>
+        <button type="submit">Register</button>
+      </form>
+      <p id="confirmationMessage"></p>
+      <button id="clearPreferences">Clear Saved Preferences</button>
+    </section>
+    <!-- // adding a sample video as a promovideo -->
+  <section id="promo">
+    <h2>Event Promo Video</h2>
+    <video id="eventVideo" class="promo_video" width="640" height="360" controls>
+      <source src="event-promo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p id="videoStatus"></p>
+  </section>
+  <!-- // footer field -->
+  <footer id="footer">
+   
+      <p>&copy;  2025 Community Events. All rights reserved.</p>
+      <p>Contact us at <a href="mailto:support@communityevents.com">support@communityevents.com</a> or call us at (555) 123-4567.</p>
+   
+    </footer>
+    
+  </body>
+</html>

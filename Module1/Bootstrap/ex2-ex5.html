@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Understanding Grids and Columns in Bootstrap</title>
+
+    <!-- Linking Bootstrap in node modules -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .box {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ex 3.1 and ex 3.2 -->
+    <div
+      class="container mt-5 rounded p-4"
+      style="background-color: rgb(255, 172, 172)"
+    >
+      <h3>Ex 3.1 and Ex 3.2</h3>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="alert alert-success">Workshops</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="alert alert-success">Hackathons</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="alert alert-success">Seminars</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ex 4.1  -->
+    <div
+      class="container mt-5 rounded p-4"
+      style="background-color: rgb(185, 255, 172)"
+    >
+      <h3>Ex 4.1 Two column layout</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box">Sidebar</div>
+        </div>
+        <div class="col-md-9">
+          <div class="box">Main Content</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ex 4.2 -->
+    <div 
+        class="container mt-5 rounded p-5"
+        style="background-color: rgb(255, 172, 229);">
+        <h6>Ex 4.2 Four Column Layout</h6>
+        <h2 class="text-center"> Upcoming Events</h2>
+        <div class="row h-100">
+            <div class="col-sm-2">
+                <div class="box">
+                    E_102
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box">
+                    Cognizant Tech Meetup
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="box">
+                    23-05-2025
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="box">
+                    Chennai
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ex. 5.1 and 5.2 Centering content and re-ordering columns -->
+    <div class="container mt-5 p-4 rounded" style="background-color: rgb(172, 255, 248)" >
+        <h6>Ex 5.1</h6>
+        <h2 class="text-center">Centering content</h2>
+        <div class="row">
+           <div class="col-6 text-center w-100">
+                <div class="box">This text is centered using Bootstrap</div>
+           </div>
+        </div>
+        
+    </div>
+
+    <div class="container mt-5 p-4 rounded" style="background-color: rgb(172, 255, 248)" >
+     <h6>ex. 5.2</h6>
+        <h3 class="text-center">Implementing Re-ordering columns</h3>
+            
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <div class="box">This is the first column but shown second</div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="box">This is the second column but shown first</div>
+            </div> 
+        </div></div>
+   
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

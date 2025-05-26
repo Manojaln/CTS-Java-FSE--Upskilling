@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Management Application</title>
+
+    <!-- Linking Bootstrap in node modules -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .box {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Event Management App</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-5"
+              type="search"
+              placeholder="Search Events"
+            />
+            <button class="btn btn-outline-light">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Implementing Tabs -->
+    <ul class="nav nav-tabs m-4">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Registered Events</a>
+      </li>
+    </ul>
+
+    <!-- ex. 6.1 Flexbox -->
+    <div
+      class="d-flex flex-column flex-md-row p-3 float-right justify-content-center"
+    >
+      <div class="box p-2 m-1 rounded bg-dark text-white">Home</div>
+      <div class="box p-2 m-1 rounded bg-dark text-white">Events</div>
+      <div class="box p-2 m-1 rounded bg-dark text-white">Registrations</div>
+      <div class="box p-2 m-1 rounded bg-dark text-white">Profile</div>
+    </div>
+
+    <br /><br /><br /><br />
+    <div class="container">
+      <div class="container alert alert-success">
+        <h1 class="text-center">Events</h1>
+      </div>
+      <!-- ex. 6.2 justifying and aligning center -->
+      <div
+        class="card p-3 d-flex flex-row justify-content-between align-items-between align-items-center"
+      >
+        <div>
+          <h5 class="card-title">HackxDay</h5>
+          <p class="card-text">
+            A 48 hour hackathon organized by Cognizant and HackClub.
+          </p>
+        </div>
+        <button class="btn btn-success">View Event</button>
+      </div>
+      <div
+        class="card p-3 d-flex flex-row justify-content-between align-items-between align-items-center"
+      >
+        <div>
+          <h5 class="card-title">Hackintym'22</h5>
+          <p class="card-text">
+            A 30 hour hackathon organized by DevDynasty Club of Sri Sairam Engineering College.
+          </p>
+        </div>
+        <button class="btn btn-success">View Event</button>
+      </div>
+      <div
+        class="card p-3 d-flex flex-row justify-content-between align-items-between align-items-center"
+      >
+        <div>
+          <h5 class="card-title">Bolt Hack</h5>
+          <p class="card-text"></p>
+        </div>
+        <button class="btn btn-success">View Event</button>
+      </div>
+    </div>
+
+    <!-- ex. 7.1 and 7.2 Typography, and text transformation -->
+
+    <div class="container mt-5">
+      <h1 class="display-1 text-center">Event Management Application</h1>
+      <p class="lead">This app will help users to register for events</p>
+      <p class="text-muted">All Events require registration</p>
+      <p class="fw-bolder">Register from your authorized Mail ID</p>
+      <p class="text-uppercase">
+        For Any queries related to these events, contact
+      </p>
+      <p class="text-lowercase">manojalan4@gmail.com</p>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- ex. 9 Forms -->
+    <form action="/" class="container m-4"></form>
+
+    <div class="floating-form container">
+      <div class="box"><h3>Event Registration form</h3></div>
+
+      <div class="m-3">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="name" />
+      </div>
+      <div class="form-floating m-3">
+        <!-- Implementing floating form (ex.8.2) -->
+        <input type="text" class="form-control" id="no_of_seats" />
+        <label for="no_of_seats">No. of Seats</label>
+      </div>
+      <div class="floating-form m-3">
+        <label for="payment" class="form-label">Payment</label>
+        <select name="payment" id="payment">
+          <option value="Done">Done</option>
+          <option value="Not Done">Not Done</option>
+        </select>
+        <div class="btn-group mt-5 text-center">
+          <!-- Implementing Button group -->
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-warning">Clear</button>
+          <button type="button" class="btn btn-success w-50">Submit</button>
+        </div>
+        <div class="mt-5">
+          <input
+            type="checkbox"
+            class="btn-check"
+            id="btn-check"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-primary w-100" for="btn-check"
+            >I agree to the terms and conditions</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
+

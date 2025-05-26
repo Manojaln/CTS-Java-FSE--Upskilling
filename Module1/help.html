@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Help - Community Events</title>
+<style>
+  body {background-color: rgb(255, 204, 204);
+
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .faq-item {
+    border: 1px solid #ff0000;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .answer {
+    display: none;
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  .faq-item.active .answer {
+    display: block;
+  }
+  .contact {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #000000;
+  }
+</style>
+</head>
+<body>
+
+<h2>Help & Support</h2>
+
+<div class="faq-item">
+  <div class="question">How to register?</div>
+  <div class="answer">Click "Register" on the event and fill the form.</div>
+</div>
+
+<div class="faq-item">
+  <div class="question">Event fees?</div>
+  <div class="answer">Music: $100, Art: $80, Tech: $150</div>
+</div>
+
+<div class="contact">
+  <strong>Contact:</strong><br />
+  Email: support@communityevents.com<br />
+  Phone: 555-123-4567
+</div>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

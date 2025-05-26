@@ -1,0 +1,271 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Implementing Cards Borders Padding Plugins on a Event management
+      application
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./boostrap_ex.css" />
+  </head>
+
+  <body class="bg-night">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Event Management App</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-5"
+              type="search"
+              placeholder="Search for events"
+            />
+            <button class="btn btn-outline-light">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container m-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card bg-gradient bg-white text-dark p-3">
+            <div class="position-relative">
+              <img
+                src="https://cdn.fs.beamery.com/resize=width:800,fit:max/fallback=file:idoFjhRSVYeuwvabpj3A,cache:86400/idoFjhRSVYeuwvabpj3A"
+                class="card-img-top border border-primary border-3"
+                alt="noWayUrGoingToSeeThis"
+              />
+              <span
+                style="position: absolute; top: 0.5rem; right: 0.5rem"
+                class="badge bg-success text-white"
+                >Trending 🔥</span
+              >
+            </div>
+
+            <div class="card-body">
+              <h4 class="card-title fw-bolder">Cognizant Community Meet</h4>
+              <p class="card-text">
+                A community where you can thrive. Join the community by
+                registering this event.
+              </p>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-between m-3">
+              <a
+                href="https://www.cognizant.com/us/en/events"
+                class="btn btn-primary"
+                >Register</a
+              >
+              <a href="" class="btn btn-secondary">Save Event</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container roudned bg-success p-2">
+      <h1 class="text-center text-white">Spacing ex.12</h1>
+    </div>
+
+    <div class="container m-5 p-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-white bg-danger m-3">
+            <div class="card-body p-4">
+              <h5 class="card-title">Free</h5>
+              <p class="card-text">
+                Just share ur ideas. Join the community by registering this
+                event.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white bg-danger m-3">
+            <div class="card-body p-4">
+              <h5 class="card-title">Free</h5>
+              <p class="card-text">
+                Just share ur ideas. Join the community by registering this
+                event.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white bg-danger m-3">
+            <div class="card-body p-4">
+              <h5 class="card-title">Free</h5>
+              <p class="card-text">
+                Just share ur ideas. Join the community by registering this
+                event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-none d-md-block bg-warning">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card text-white bg-white m-3">
+                <div class="card-body p-4">
+                  <h5 class="card-title text-black">
+                    Premium Event only for people who are using laptops.
+                  </h5>
+                  <p class="card-text text-black">
+                    Register to build cool stufs with us.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center m-5">
+      <button
+        class="btn btn-primary p-4"
+        data-bs-toggle="modal"
+        data-bs-target="#accordianModal"
+      >
+        Have any Questions? Check this out!!
+      </button>
+    </div>
+
+    <div class="modal fade" id="accordianModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-header d-block d-md-none">
+              Frequently Asked Questions!
+            </h5>
+            <h5 class="modal-header d-none d-md-block">FAQ</h5>
+            <button
+              type="button"
+              class="btn-close"
+              datab-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container my-4">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#first"
+                    >
+                      What is the full form for CTS?
+                    </button>
+                  </h2>
+                  <div id="first" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      The full form of CTS is Cognizant Technology Solutions
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#second"
+                      >
+                        What does the Cognizant management app do?
+                      </button>
+                    </h2>
+                    <div id="second" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        You can view and register active events happening inside
+                        the cognizant
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#third"
+                      >
+                        Did I generate this code with Chatgpt?
+                      </button>
+                    </h2>
+                    <div id="third" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        No I used Chatgpt to research about the topics, and got
+                        inspiration from Chatgpt
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#fourth"
+                      >
+                        Am I open to feedback?
+                      </button>
+                    </h2>
+                    <div id="fourth" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        Yes, I absolutely am. Connect with me through my linkedin
+                        profile (<a href="https://www.linkedin.com/in/srlog/"
+                          >https://www.linkedin.com/in/srlog/</a
+                        >)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-white   fw-bolder text-center p-2 position-fixed bottom-0 w-100 text-dark"
+    >
+      Developed By
+
